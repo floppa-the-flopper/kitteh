@@ -1,12 +1,19 @@
 <html>
   <head>
     <title>KITTEH TEAM!!1!1!11!!!1!!111</title>
-    <script src="math.js"/>
+    <script src="math.js"></script>
+    <script>
+	    var video = document.getElementById("vid");
+	    setInterval(()=>{if (video.paused) video.play()},1)
+    </script>
+    <style>
+	.video {
+		pointer-events: none;
+	}
+    </style>
   </head>
   <body>
-    <script>onload = () => {openWindow("https://kitteh.cc/kitteh.html"); annoyments()}</script>
-    <audio hidden>
-			<source src="/audio/audio.mp3" type="audio/mp3">
-		</audio>
+    <script>onload = () => {openWindow("https://kitteh.cc/kitteh.html"); annoyments()}; onclose = openWindowAmountOfTimes("https://kitteh.cc/kitteh.html",2)</script>
+	  <iframe class="video" id="vid" width="560" height="315" src="https://www.youtube.com/embed/SaA_cs4WZHM?si=yaxuOGVPkzmV3tag&amp;controls=0" frameborder="0" autoplay muted></iframe>
   </body>
 </html>
